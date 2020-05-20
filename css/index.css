@@ -1,0 +1,364 @@
+/* -------------------------------- Common Codes ------------------------------ */
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face{
+    font-family:myfont;
+    src: url(font/raleway_thin-webfont.woff)
+
+}
+.fontface{
+    font-family: myfont; 
+}
+p.fontgoogle{
+    font-family:'Roboto',sans-serif;
+    
+}
+body{
+    font-family:'Roboto',sans-serif;
+    background: #000000;
+    color: #ffffff;
+
+}
+footer{
+    font-family:'Roboto',sans-serif  
+}
+
+
+/* -------------------------------- Index.html Page ------------------------------ */
+
+  .backg{
+      padding: 3%;
+      background-position: center
+  }
+  .background{
+      background-image:image()
+  }
+  #nav_bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 35px;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+   color: rgb(145, 19, 19);
+   
+  }
+  
+  .active {
+    background-color: rgb(120, 1, 0);
+  }
+  
+  .welcome{
+    text-align: center;
+    color:rgb(193, 1, 13);
+    text-shadow: red;
+    text-shadow: 1.1px 1.1px 1.5px   rgb(145, 19, 19);
+    
+  }
+  .welcome_text{
+    text-align: center;
+    color: rgb(127, 3, 4);
+
+  }
+
+  .centered {
+    color: white;
+    text-align: center;
+    word-break: break-all;
+
+  }
+
+/* -------------------------------- Movie gallery (index page) ------------------------------ */
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 24.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+figcaption{
+  text-align: center;
+}
+
+
+
+
+  /* -------------------------------- Footer Css ------------------------------ */
+  .footer_id1{
+    text-align: right;
+  }
+  footer{
+    background-color: rgb(3, 2, 0);  
+  }
+	#footer {
+		/* position: relative; */
+		color: #fff;
+		text-shadow: 0 0 0.5px rgba(66, 52, 52, 0.25);
+		text-align: center;
+		margin: 4.5em 0 0 0;
+	}
+
+  #footer:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -4.5em;
+    left: 50%;
+    height: 4.5em;
+    border-left: solid 1px #fff;
+  }
+
+  #footer a {
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+  }
+
+    #footer a:hover {
+      color: #35b88f;
+      text-shadow: 0 0 0.5px rgba(69, 200, 159, 0.25);
+      border-bottom-color: rgba(53, 184, 143, 0.5);
+    }
+
+  #footer .icons {
+    padding: 0.75em 2em 0.75em 2em;
+    border-radius: 3em;
+    border: solid 1px rgb(211, 3, 3);
+    display: inline-block;
+    margin: 0 0 3em 0;
+  }
+  
+  .icons{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(10, 10, 10);
+  }
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;} 
+  .col-3 {width: 25%; }
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .img_gallery{float:left; display:block;}
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+      float: center;
+      margin-right: 1%; 
+      margin-bottom: 0.5em;
+
+    } }
+
+  /* -------------------------------- Catalouge Css Code ------------------------------ */
+
+  .cataloge_header{
+    text-align: center;
+    float: center;
+
+  }
+
+
+  /* -------------------------------- Contact Page ------------------------------------- */
+
+  .container{
+    text-align: center;
+  
+  }
+label{
+  display: block;
+  height: 80%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+.required{
+  color:rgb(123, 255, 0);
+}
+input[type=submit] {
+  
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid rgb(17, 199, 245);
+} 
+fieldset{
+  color:black;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid rgb(100, 2, 2);
+  border-radius: 8px;
+  background-color:#f7e3e2;
+  margin-left: 25%;
+} 
+#country{
+  background-color:rgb(53, 49, 52);
+
+}
+#subject{
+  width: 70%;
+  height:150px;
+  border-radius: 8px;
+  background-color:rgb(53, 49, 52);
+}
+.input-field{
+  width: 55%;
+  height: 25px;
+  border-radius: 4px;
+  background-color:rgb(53, 49, 52);
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="c89"] {
+    width: 7%;
+    padding-top: 30px;
+  } }
+
+#footer_id2{
+  float:left;
+}
+
+
+.hero-image {
+  background-image: url("photographer.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* -------------------------------- Comparison Page ------------------------------ */
+#compavenger{
+  border: 2px solid red;
+  border-collapse: collapse;
+  width: 100%;
+  padding: 2%;
+  margin-top: 5%;
+  }
+  #compavenger th{
+  border-bottom: 2px solid red;
+  }
+  #compavenger td,#compavenger th{
+  padding: 15px;
+  text-align: left;
+  } 
+  #compavenger tr:hover ,#compavenger th:hover {background-color: red; color: black}
+
+
+/* -------------------------------- Image Gallery ------------------------------ */
+
+
+.inner_gallery{
+  margin-left: 50px;
+  
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(247, 11, 11);
+  margin: 1em 0;
+  padding: 0; 
+}
+.column_grp0 {
+  margin-left: 20px;
+  border-radius: 8px;
+  background-color: rgb(202, 0, 0);
+  /* color: antiquewhite; */
+  float:left;
+  width: 22.33%;
+  padding: 40px;
+  border: 3px;
+
+}
+.gallery_image_group{
+  margin-bottom:50px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.gallery_image:hover {
+   
+    
+  opacity: 0.5;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.gallery_image {
+    
+  border: 1px solid rgb(12, 7, 7);
+  /* border-radius: 5px; */
+  padding: .5px;
+  width: 150px;
+  border-radius: 8px;
+  opacity: 1.0;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.gallery_image_group:hover {
+  border-radius: 8px;
+  /* background-color: rgb(255, 255, 255,0.2); */
+  -ms-transform: scale(1.12, 1.12); /* iD8 */
+  -webkit-transform: scale(1.12, 1.12); /*safari*/
+  transform: scale(1.12, 1.12);
+}
+
+@media only screen and (max-width: 768px) {
+/* Gallery for mobile phones: */
+[class*="g99"] {
+text-align: center;
+width: 100%;
+float: center;
+margin: -20px;
+margin-bottom: 0.5em;
+}}
+
+
+
+
